@@ -16,7 +16,62 @@
             <nav><a href="propos.html">A propos</a></nav>
             <nav><a href="contact.html">Contact</a></nav>
         </header>
-        
+        <h1>Formulaire de contact🤙 </h1>
+        <form action="recuperation.php" method="POST">
+            <div>
+                <label for="nom">Nom*:</label>
+                <input type="text" name="nom" value="nom" required>
+            </div>
+            <br>
+            <div>
+                <label for="prenom">prénom*:</label>
+                <input type="text" name="prenom" value="prenom" required>
+            </div>
+            <br>
+            <div>
+                <label for="telephone">Téléphone</label>
+                <input type="tel" name="telephone" value="telephone" >
+            </div>
+            <br>
+            <div>
+                <label for="email"><strong>E-mail* :</strong></label>
+                <input type="email" name="email" value="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="objet">Objet</label>
+                <select name="objet" value="objet">
+                    <option value="plus de musique">Plus d'information</option>
+                    <option value="question">Question</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" value="message"></textarea>
+            </div>
+            <br>
+            </div>
+            <br>
+            <div>
+                <input type="hidden" name="secret" value="secret" >
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Envoyer le message"> 
+            </div>
+            <br>
+        </form>
+        </main>
+        <footer>
+            <div class="pied">
+                <span>🗂️Page: Centre culturel</span>
+                <span>🏠N'Djamena, Chad</span>
+                <span>📞+235 66 06 90 06</span>
+                <span>📩aleycentre@gmail.com</span>
+                <span>💻Cours en ligne · Cours en personne</span>
+            </div> 
+        </footer>
     </main>
     <h1>pour nous contacter</h1>
 </body>
