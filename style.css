@@ -1,0 +1,43 @@
+header {
+    background-color:  #C8AD7F; /* Couleur de fond */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Espacement équilibré entre les éléments */
+    align-items: center; /* Centrer verticalement les éléments */
+    padding: 20px 50px; /* Espace intérieur */
+    font-weight: 700; /* Épaisseur de la police */
+    font-size: 18px; /* Taille de la police */
+    font-family: 'Montserrat', sans-serif; /* Police de caractères */
+    text-transform: uppercase; /* Mettre en majuscules */
+}
+header a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: #333; /* Couleur du texte */
+    transition: color 0.3s ease; /* Transition fluide de la couleur du texte */
+}
+header :hover {
+    color: rgb(230, 111, 14);
+    transform: scale(1.1);
+}
+h1{
+    text-decoration: underline;
+    
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+ }
+
+
+
+
+ .videos-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: center;
+}
+
