@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="description" content="atelier de couture">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="reset.css"> -->
-    <link rel="stylesheet" href="style.css">
     <title>Acceuil</title>
 </head>
 <body>
         <header>
              <h1>ATELIER DE COUTURE</h1>
-             <p>Bienvenue sur notre boutique en ligne de vêtements</p>
         </header>    
+        <p>Bienvenue sur notre boutique en ligne de vêtements</p>
         <nav>
             <a href="index.php">Acceuil</a>
             <a href="produit.html">Produit</a>
@@ -20,7 +18,7 @@
             <a href="contact.html">Contact</a>
         </nav>
         <div class="videos-container">
-    <?php 
+    <!-- <?php 
     $serveur = "localhost";
     $utilisateur = "root"; 
     $mot_de_passe = ""; 
@@ -54,7 +52,7 @@
     }
 
     mysqli_close($connexion);
-    ?>
+    ?> -->
 
     </div>
     <footer>
