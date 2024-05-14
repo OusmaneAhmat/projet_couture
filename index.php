@@ -9,15 +9,17 @@
     <title>Acceuil</title>
 </head>
 <body>
-<main>
         <header>
-            <nav><a href="index.php">Acceuil</a></nav>
-            <nav><a href="produit.html">Produit</a></nav>
-            <nav><a href="propos.html">A propos</a></nav>
-            <nav><a href="contact.html">Contact</a></nav>
+             <h1>ATELIER DE COUTURE</h1>
+             <p>Bienvenue sur notre boutique en ligne de vêtements</p>
         </header>    
-    </main>
-    <h1>ATELIER DE COUTURE</h1>
+        <nav>
+            <a href="index.php">Acceuil</a>
+            <a href="produit.html">Produit</a>
+            <a href="propos.html">A propos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
     <div class="videos-container">
     <?php 
 $serveur = "localhost";
@@ -56,5 +58,17 @@ mysqli_close($connexion);
 ?>
 
 </div>
+
+
+
+<footer>
+        <div>
+                🗂️Page: Centre culturel
+                🏠N'Djamena, Chad
+                📞+235 66 06 90 06
+                📩aleycentre@gmail.com
+                💻Cours en ligne · Cours en personne
+            </div> 
+        </footer>
 </body>
 </html>
