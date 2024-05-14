@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="atelier de couture">
@@ -19,56 +19,52 @@
             <a href="propos.html">A propos</a>
             <a href="contact.html">Contact</a>
         </nav>
-
-    <div class="videos-container">
+        <div class="videos-container">
     <?php 
-$serveur = "localhost";
-$utilisateur = "root"; 
-$mot_de_passe = ""; 
-$base_de_donnees = "couture";
-$connexion = mysqli_connect($serveur, $utilisateur, $mot_de_passe, $base_de_donnees);
+    $serveur = "localhost";
+    $utilisateur = "root"; 
+    $mot_de_passe = ""; 
+    $base_de_donnees = "couture";
+    $connexion = mysqli_connect($serveur, $utilisateur, $mot_de_passe, $base_de_donnees);
 
-if (!$connexion) { 
-    die("Échec de la connexion : " . mysqli_connect_error()); 
-} else { 
-    echo "Connexion réussie à la base de données.";
-}
+    if (!$connexion) { 
+        die("Échec de la connexion : " . mysqli_connect_error()); 
+    } else { 
+        echo "Connexion réussie à la base de données.";
+    }
 
-$sql = "SELECT * FROM video";
-$resultats = mysqli_query($connexion, $sql);
+    $sql = "SELECT * FROM video";
+    $resultats = mysqli_query($connexion, $sql);
 
-if($resultats){
-    if(mysqli_num_rows($resultats) > 0) {
-        $videos = mysqli_fetch_all($resultats, MYSQLI_ASSOC);
-        foreach ($videos as $video) {
-            // Faire quelque chose avec chaque ligne de résultat
-            // Par exemple, afficher le lien de la vidéo :
-            echo '<video controls width="250">
-                    <source src="' . $video['url'] . '" type="video/mp4" />
-                  </video><br>';
+    if($resultats){
+        if(mysqli_num_rows($resultats) > 0) {
+            $videos = mysqli_fetch_all($resultats, MYSQLI_ASSOC);
+            foreach ($videos as $video) {
+                // Faire quelque chose avec chaque ligne de résultat
+                // Par exemple, afficher le lien de la vidéo :
+                echo '<video controls width="250">
+                        <source src="' . $video['url'] . '" type="video/mp4" />
+                    </video><br>';
+            }
+        } else {
+            echo "Aucun résultat trouvé";
         }
     } else {
-        echo "Aucun résultat trouvé";
+        echo "Erreur : " . mysqli_error($connexion); 
     }
-} else {
-    echo "Erreur : " . mysqli_error($connexion); 
-}
 
-mysqli_close($connexion);
-?>
+    mysqli_close($connexion);
+    ?>
 
-</div>
-
-
-
-<footer>
+    </div>
+    <footer>
         <div>
-                🗂️Page: Centre culturel
-                🏠N'Djamena, Chad
-                📞+235 66 06 90 06
-                📩aleycentre@gmail.com
-                💻Cours en ligne · Cours en personne
+            🗂️Page: Centre culturel
+            🏠N'Djamena, Chad
+            📞+235 66 06 90 06
+            📩aleycentre@gmail.com
+            💻Cours en ligne · Cours en personne
             </div> 
-        </footer>
+    </footer>
 </body>
 </html>
