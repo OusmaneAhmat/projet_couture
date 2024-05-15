@@ -5,26 +5,101 @@
     <meta name="description" content="site d'un atelier de couture">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A propos</title>
+    <style>
+        header {
+            background-color: #333;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            margin-bottom: 10px;
+        }
+        .logo img {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            font-size: 18px;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: lawngreen;
+        }
+        h2, p, h3{
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 120px;
+        }
+        .content {
+            flex: 1; /* Pour que le contenu occupe l'espace disponible */
+            max-width: 600px; /* Ajustez la largeur maximale selon vos préférences */
+            padding: 20px;
+            text-align: justify; /* Aligner le texte justifié pour une meilleure lisibilité */
+        }
+        .image img {
+            width: 200px; /* Taille fixe pour l'image */
+            height: auto;
+            border-radius: 10px;
+            overflow: hidden; /* Pour cacher tout contenu qui dépasse de la taille fixée */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .image img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        
+    </style>
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="./images/machine.jpg" alt="Machine à coudre">
+        </div>
         <h1>À Propos</h1>
+        <p>Bienvenue sur notre boutique en ligne de vêtements où vous trouverez les dernières tendances à des prix abordables.</p>
     </header>
-    <p>Bienvenue sur notre boutique en ligne de vêtements où vous trouverez les dernières tendances à des prix abordables.</p>
+   
     <nav>
-        <a href="index.php">Acceuil</a>
-        <a href="produit.html">Produit</a>
+        <a href="index.php">Accueil</a>
         <a href="propos.html">A propos</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <footer>
-        <div>
-        🗂️Page: Centre culturel
-        🏠N'Djamena, Chad
-        📞+235 66 06 90 06
-        📩aleycentre@gmail.com
-        💻Cours en ligne · Cours en personne
-        </div> 
-    </footer>
+
+    <h2>Pourquoi j'ai créé cet atelier de couture</h2>
+    <div class="container">
+        <div class="content">
+            <p>Pour moi, la couture est bien plus qu'un simple métier. C'est une forme d'expression personnelle, un moyen de raconter des histoires à travers les tissus et les textures. En créant cet atelier, j'ai voulu offrir aux gens la possibilité d'exprimer leur individualité à travers leurs vêtements.
+                Dans un monde dominé par la fast-fashion et la production de masse, il y a un besoin croissant de vêtements de qualité et de produits personnalisés. Mon atelier vise à répondre à ce besoin en offrant des vêtements bien faits, fabriqués avec soin et attention aux détails, et en proposant des services de couture sur mesure pour ceux qui recherchent quelque chose de vraiment unique.
+                Enfin, l'atelier de couture est aussi une entreprise sociale pour moi. Je crois en l'importance de créer des emplois locaux, de former de nouveaux talents, et de soutenir ma communauté. Mon atelier est un lieu où les gens peuvent non seulement acheter des vêtements, mais aussi apprendre, se connecter et se sentir partie prenante d'une communauté de passionnés de la mode.
+            </p>
+        </div>
+    </div>
+    <hr>
+    <h3>TEMOIGNAGES</h3>
+    <div class="container">
+        <div class="image">
+            <img src="./images/charfa.jpg" alt="">
+            <!-- <p>J'ai commandé cet atelier depuis la Turquie. Je suis satisfait du résultat. Je vous recommande énormément cet atelier.</p> -->
+        </div>
+        <div class="image">
+            <img src="./images/ali.jpg" alt="">
+            <!-- <p>Je m'appelle Ali et j'habite en France. Nous avons commandé avec mon ami Hassan. Comme vous pouvez le constater, le couturier nous a vraiment rendus beaux.</p> -->
+        </div>
+    </div>
+    
+   
 </body>
 </html>
