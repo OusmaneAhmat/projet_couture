@@ -1,12 +1,14 @@
 .tete{
-    background-color: #333;
+    background-color:#B99B91;
             padding: 30px;
             text-align: center;
             color: white;
             margin-bottom: 10px;
 }
 
-
+body{
+    background-color: #E8E9E5;
+}
 
 h2{
     text-align: center;
@@ -37,7 +39,7 @@ h2{
 }
 nav {
     text-align: center;
-    background-color: #333;
+    background-color: #9E796D;
     padding: 10px 0;
 }
 nav a {

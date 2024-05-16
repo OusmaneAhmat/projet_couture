@@ -25,7 +25,12 @@
 - contanct.html, localisation de l'atelier
 - style.css
 - recupere.php
-- 
+
+SUIVI DE PROJET
+#Feedback et analyse :
+
+- Encouragez les visiteurs à laisser des commentaires et des avis sur votre site. Utilisez des outils d'analyse web comme Google Analytics pour suivre le comportement des utilisateurs et obtenir des informations sur la performance de votre site.
+- Mettre mes réseaux sociaux
 
 
 

@@ -17,6 +17,101 @@
         <a href="propos.html">A propos</a>
         <a href="contact.html">Contact</a>
     </nav>
+
+    <h2>Découvrer nos collections</h2>
+    <div class="container">
+    <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 29.jpg" alt=""></a>
+        </div>
+        
+        <!-- <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 3.jpg" alt=""></a>
+        </div>
+        -->
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 4.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 5.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 6.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 7.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 8.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 9.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 10.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 11.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 12.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 13.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 14.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 14.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 15.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 16.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 17.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 18.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 19.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 20.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 21.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 22.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 23.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 24.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 25.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 26.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img.jpg" alt=""></a>
+        </div>
+        <div class="image">
+        <a href="./detail/detail1.html"><img src="./img/img 28.jpg" alt=""></a>
+        </div>
+       
+        
+        
+    </div>
+
+
     <div class="container">
         <div class="image">
             <a href="./detail/detail1.html"><img src="./images/djezz2.jpg" alt=""></a>
@@ -76,7 +171,7 @@
         </div>
         
     </div>
-    <h2>Découvrir nos videos</h2>
+    <h3>Découvrir nos videos</h3>
     <div class="container-video">
         <?php 
         $serveur = "localhost";
