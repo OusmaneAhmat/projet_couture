@@ -4,63 +4,156 @@
     <meta charset="UTF-8">
     <meta name="description" content="site d'un atelier de couture">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Parisienne&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
     <title>A propos</title>
     <style>
-        header {
-            background-color: #333;
-            padding: 30px;
+        body{
+    background-color: #f0cac6;
+    font-family: "Archivo Narrow", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+}
+header{
+  
+    /* background-color:#E7B9C2; */
+    /* background-color:#A6C8E8 */
+     background-color:#FF6F61 ;
+            padding: 25px;
             text-align: center;
             color: white;
-            margin-bottom: 10px;
-        }
-        .logo img {
+}
+nav {
+    text-align: center;
+    background-color: #6c2e28;
+    padding: 20px 0;
+}
+nav a {
+    color: white;
+    font-size: 18px;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    
+}
+nav a:hover {
+    color: lawngreen;
+    text-decoration: underline;
+}   
+h1{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+}
+.paragraphe{
+    font-family: "Archivo Narrow", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    font-size: 40px;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 18px;
+    text-decoration: underline;
+    font-size: 30px;
+}
+/* Style du contenu */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.content {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    color: #333;
+    text-align: justify;
+    line-height: 1.6; /* Augmente l'espacement entre les lignes */
+    font-family: 'Times New Roman', serif; /* Utilise une police de caractères différente */
+}
+.paraphe {
+    font-family: "Montserrat", sans-serif; /* Police de caractères élégante et professionnelle */
+    font-size: 16px; /* Taille de police confortable pour la lecture */
+    line-height: 1.6; /* Espacement entre les lignes pour une meilleure lisibilité */
+    text-align: justify; /* Alignement justifié pour une apparence nette et ordonnée */
+    color: #333; /* Couleur de texte sombre pour un bon contraste */
+}
+h3{
+    text-align: center;
+text-decoration: underline;
+font-size: 30px;
+}
+/* Style des témoignages */
+.image img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 3px solid #B99B91; /* Ajoute une bordure autour des images */
+}
+
+.image img:hover {
+    transform: scale(1.1); /* Augmente la taille de l'image au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style du footer */
+footer {
+    text-align: center;
+            padding: 20px;
+            background-color: #a1624d;
+            color: white;
+            margin-top: 20px;
+}
+
+ .logo img {
             width: 100px;
             height: auto;
             border-radius: 50%;
         }
-        nav {
-            text-align: center;
-            background-color: #333;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            font-size: 18px;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            color: lawngreen;
-        }
+    
         h2, p, h3{
             text-align: center;
         }
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 20px;
-            gap: 120px;
-        }
-        .content {
-            flex: 1; /* Pour que le contenu occupe l'espace disponible */
-            max-width: 600px; /* Ajustez la largeur maximale selon vos préférences */
-            padding: 20px;
-            text-align: justify; /* Aligner le texte justifié pour une meilleure lisibilité */
-        }
-        .image img {
-            width: 200px; /* Taille fixe pour l'image */
-            height: auto;
-            border-radius: 10px;
-            overflow: hidden; /* Pour cacher tout contenu qui dépasse de la taille fixée */
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .image img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
+       
         
+
+
+        .container {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    margin: 0 20px; /* Espace entre les images */
+    text-align: center; /* Centrer le texte à l'intérieur de chaque image */
+}
+
+.image img {
+    display: block; /* Pour éviter les espaces blancs en bas des images */
+    margin-bottom: 10px; /* Espacement entre l'image et le paragraphe */
+}
+
+.temoigne {
+    font-style: italic; /* Style italic pour le paragraphe de témoignage */
+}
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -69,7 +162,7 @@
             <img src="./images/machine.jpg" alt="Machine à coudre">
         </div>
         <h1>À Propos</h1>
-        <p>Bienvenue sur notre boutique en ligne de vêtements où vous trouverez les dernières tendances à des prix abordables.</p>
+        <p class="paragraphe">Bienvenue sur notre boutique en ligne de vêtements où vous trouverez les dernières tendances à des prix abordables.</p>
     </header>
    
     <nav>
@@ -81,7 +174,7 @@
     <h2>Pourquoi j'ai créé cet atelier de couture</h2>
     <div class="container">
         <div class="content">
-            <p>Pour moi, la couture est bien plus qu'un simple métier. C'est une forme d'expression personnelle, un moyen de raconter des histoires à travers les tissus et les textures. En créant cet atelier, j'ai voulu offrir aux gens la possibilité d'exprimer leur individualité à travers leurs vêtements.
+            <p class="paraphe">Pour moi, la couture est bien plus qu'un simple métier. C'est une forme d'expression personnelle, un moyen de raconter des histoires à travers les tissus et les textures. En créant cet atelier, j'ai voulu offrir aux gens la possibilité d'exprimer leur individualité à travers leurs vêtements.
                 Dans un monde dominé par la fast-fashion et la production de masse, il y a un besoin croissant de vêtements de qualité et de produits personnalisés. Mon atelier vise à répondre à ce besoin en offrant des vêtements bien faits, fabriqués avec soin et attention aux détails, et en proposant des services de couture sur mesure pour ceux qui recherchent quelque chose de vraiment unique.
                 Enfin, l'atelier de couture est aussi une entreprise sociale pour moi. Je crois en l'importance de créer des emplois locaux, de former de nouveaux talents, et de soutenir ma communauté. Mon atelier est un lieu où les gens peuvent non seulement acheter des vêtements, mais aussi apprendre, se connecter et se sentir partie prenante d'une communauté de passionnés de la mode.
             </p>
@@ -92,14 +185,11 @@
     <div class="container">
         <div class="image">
             <img src="./images/charfa.jpg" alt="">
-            <!-- <p>J'ai commandé cet atelier depuis la Turquie. Je suis satisfait du résultat. Je vous recommande énormément cet atelier.</p> -->
         </div>
         <div class="image">
             <img src="./images/ali.jpg" alt="">
-            <!-- <p>Je m'appelle Ali et j'habite en France. Nous avons commandé avec mon ami Hassan. Comme vous pouvez le constater, le couturier nous a vraiment rendus beaux.</p> -->
         </div>
     </div>
-    
     <footer>
         <div>
             🗂️Page: Atelier de Couture

@@ -31,6 +31,7 @@ SUIVI DE PROJET
 
 - Encouragez les visiteurs à laisser des commentaires et des avis sur votre site. Utilisez des outils d'analyse web comme Google Analytics pour suivre le comportement des utilisateurs et obtenir des informations sur la performance de votre site.
 - Mettre mes réseaux sociaux
+- Gestion de la commande : Les comptes utilisateurs peuvent faciliter la gestion des commandes pour vos clients en enregistrant leurs informations personnelles, leurs adresses de livraison et leurs préférences de paiement.
 
 
 
