@@ -67,7 +67,7 @@
     <form action="" method="POST">
         <label for="email">Email :</label>
         <input type="email" id="email" name="email" required>
-        <label for="motdepasse">Mot de passe :</label>
+        <label for="motdepasse">Mot de passes :</label>
         <input type="password" id="motdepasse" name="motdepasse" required>
         <input type="submit" name="creer" value="Connecter">
     </form>
@@ -77,6 +77,10 @@
 
 
     <?php
+
+
+
+
 // 1) Connexion à la base de données
 
 $serveur = "localhost";
@@ -103,6 +107,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($resultat) {
         print_r($resultat);
         // echo 'le compte existe';
+
+     
+
         header("Location: index.php");
      
     } else {

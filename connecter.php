@@ -73,6 +73,8 @@
 </div>
 
 <?php
+
+session_start(); // Démarre la session
 // 1) Connexion à la base de données
 
 $serveur = "localhost";
@@ -98,6 +100,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (mysqli_num_rows($resultat) > 0) {
         // L'utilisateur existe
+
+          // Stocke les informations de l'utilisateur dans les variables de session
+          $_SESSION['email'] = $email;
+      
         header("Location: index.php");
         exit();
     } else {

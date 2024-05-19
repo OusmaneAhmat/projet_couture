@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -16,7 +22,21 @@
         <h1>ATELIER DE COUTURE</h1>
         <p class="paragraphe">Bienvenue sur notre boutique en ligne de vêtements</p>
         <button onclick="window.location.href='creation.php'" class="bouton-inscrire">S'inscrire</button>
-        <button onclick="window.location.href='connecter.php'" class="bouton-inscrire">Se Connecter</button>
+        
+        <?php
+         if(isset($_SESSION['email'])){
+        echo    ' <button onclick="window.location.href='."'".'commande.php'. "'" .'" class="bouton-inscrire">Commander</button>';
+        
+        
+        // '<button>Commander</button>';
+        }
+   
+        if(isset($_SESSION['email'])){
+            echo ' <button onclick="window.location.href='."'".'deconnexion.php'. "'" .'" class="bouton-inscrire">Deconnexion</button>';
+        } else{
+            echo '<button onclick="window.location.href='."'".'connecter.php'."'".'" class="bouton-inscrire">Se Connecter</button>';
+        }
+?>
     </header>    
     <nav>
         <a href="index.php">Accueil</a>
@@ -36,6 +56,7 @@
                 <p>prix: 89,99 €</p>
                 <a href="./detail/detail1.html"><img src="./img/img 4.jpg" alt=""></a>
             </div>
+    
             <div class="image">
             <h4>Ensemble 2 pieces pour Homme</h4>
             <p>prix: 89,99 €</p>
