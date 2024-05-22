@@ -21,7 +21,29 @@ session_start();
     <header class="header">
         <h1>ATELIER DE COUTURE</h1>
         <p class="paragraphe">Bienvenue sur notre boutique en ligne de vêtements</p>
-        <button onclick="window.location.href='creation.php'" class="bouton-inscrire">S'inscrire</button>
+       
+        <!-- <?php
+         if(isset($_SESSION['email'])){
+        echo    ' <button onclick="window.location.href='."'".'commande.php'. "'" .'" class="bouton-inscrire">Commander</button>';
+        
+        
+        // '<button>Commander</button>';
+        }
+   
+        if(isset($_SESSION['email'])){
+            echo ' <button onclick="window.location.href='."'".'deconnexion.php'. "'" .'" class="bouton-inscrire">Deconnexion</button>';
+        } else{
+            echo '<button onclick="window.location.href='."'".'connecter.php'."'".'" class="bouton-inscrire">Se Connecter</button>';
+        }
+?> -->
+    </header>    
+    <nav>
+        <a href="index.php">Accueil</a>
+        <a href="propos.html">A propos</a>
+        <a href="contact.html">Contact</a>
+
+            <button onclick="window.location.href='creation.php'" class="bouton-inscrire">S'inscrire</button>
+
         
         <?php
          if(isset($_SESSION['email'])){
@@ -37,11 +59,6 @@ session_start();
             echo '<button onclick="window.location.href='."'".'connecter.php'."'".'" class="bouton-inscrire">Se Connecter</button>';
         }
 ?>
-    </header>    
-    <nav>
-        <a href="index.php">Accueil</a>
-        <a href="propos.html">A propos</a>
-        <a href="contact.html">Contact</a>
     </nav>
     <main>
         <h2>Découvrir nos collections</h2>

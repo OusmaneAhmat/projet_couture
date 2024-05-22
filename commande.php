@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="reset.css">
     <title>Formulaire de commande</title>
     <style>
- body{
+ /* body{
     background-color: #f0cac6;
     font-family: "Archivo Narrow", sans-serif;
   font-optical-sizing: auto;
@@ -18,14 +18,14 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 400px;
-        }
+        } */
         h1 {
             margin-bottom: 20px;
             font-size: 24px;
             text-align: center;
             color: #333;
         }
-        label {
+        /* label {
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
@@ -54,7 +54,45 @@
         input[type="submit"]:hover {
             background-color: #0056b3;
         }
-}
+} */
+  
+form {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: auto;
+            background-color: #9E796D;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: lawngreen;
+        }
 header{
   
     /* background-color:#E7B9C2; */
@@ -129,9 +167,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
+<h1>Formulaire de commande</h1>
 <form action="" method="POST">
-    <h1>Formulaire de commande</h1>
+    
 
     <label for="nom">Nom :</label>
     <input type="text" id="nom" name="nom" required>

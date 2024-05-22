@@ -142,4 +142,26 @@ footer {
     margin: 7px;
  }
 
- 
+ .bouton-inscrire {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    /* margin: 10px 0; */
+    margin-right: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.bouton-inscrire:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.bouton-inscrire:active {
+    transform: scale(1);
+}
